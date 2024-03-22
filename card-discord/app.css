@@ -12,11 +12,9 @@ html body {
 }
 :root {
   --pastel-gradient: linear-gradient(to top, #fdbccf, #d3c0f9);
-  /* --pastel-gradient: transparent; */
   --pastel-gradient-outline: linear-gradient(to top, #fff, #d3c0f9);
-  /* --pastel-gradient-outline: transparent; */
   --theme-text: black;
-  /* --theme-text: white; */
+  --inner-backgron-color: #f094c8;
   --box-1: #ff0000;
   --box-2: #9ae8bc;
   --box-3: #d2afdd;
@@ -57,7 +55,7 @@ html body {
   position: relative;
   width: 100%;
   height: 25%;
-  background-color: #f094c8;
+  background-color: var(--inner-backgron-color);
   background-image: url(https://i.pinimg.com/originals/6f/07/a8/6f07a875c5ebed5ec60187feeb2f7952.gif);
   overflow: hidden;
   background-size: cover;
