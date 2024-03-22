@@ -6,6 +6,27 @@ for (let i = 0; i < roleCode.length; i++) {
   roleCode[i].classList.add(`active${indexNum}`);
   console.log(`active${indexNum}`);
 }
+
+// Hàm để kiểm tra xem có phải là ban ngày hay không
+function isDayTime() {
+  const currentHour = new Date().getHours();
+  return currentHour >= 7 && currentHour < 19;
+}
+// Hàm để cập nhật màu sắc của themee
+function updateTheme() {
+  const night = document.querySelector("#night");
+  if (isDayTime()) {
+    console.log("bay gio la ban ngay ");
+    night.disabled = true;
+  } else {
+    console.log("bay gio la ban dem ");
+    night.disabled = false;
+  }
+}
+// Cập nhật màu sắc lúc ban đầu
+updateTheme();
+// Cập nhật màu sắc mỗi 5 phút
+setInterval(updateTheme(), 300000);
 //thingkibng  config
 const thingKing = document.querySelector(".youThingKing");
 thingKing.innerHTML = "Xin chào mình là Yuki SE tại VNG ";
