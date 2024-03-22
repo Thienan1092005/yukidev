@@ -23,16 +23,13 @@ function updateTheme() {
     night.disabled = false;
   }
 }
-
 updateTheme();
-
 setInterval(updateTheme(), 300000);
 //thingkibng  config
 const thingKing = document.querySelector(".youThingKing");
 thingKing.innerHTML = "Xin chào mình là Yuki SE tại VNG ";
 let userData = null;
 //công táo  truyền id
-
 const proflieDefaut = "654675180529909789";
 let response;
 // discord sync
