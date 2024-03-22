@@ -54,6 +54,14 @@ function spotify() {
     }
   }
 }
+//vng role // (cấm sửa đoạn này !!!!)
+const vng = document.querySelector(".vng");
+if (proflieDefaut !== "654675180529909789") {
+  vng.style.display = "none";
+} else {
+  vng.style.display = "flex";
+}
+
 // hmaf get gobalname và display name
 function getAName() {
   const tick = "./svg/icons8-blue-tick.svg";
