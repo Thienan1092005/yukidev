@@ -297,6 +297,13 @@ html body {
   width: 70px;
   height: 70px;
 }
+.ilovevng {
+  width: 150px;
+  height: 125px;
+  position: absolute;
+  right: 0;
+  top: 150px;
+}
 .decripton {
   position: relative;
   padding-left: 25px;
