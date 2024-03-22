@@ -316,11 +316,13 @@ html body {
 }
 .logo {
   padding-bottom: 10px;
+  padding-right: 10px;
   width: 30px;
-  height: 40px;
+  height: 35px;
   right: 0;
   position: absolute;
   top: 0;
+  object-fit: cover;
 }
 
 @media (max-width: 767px) {
