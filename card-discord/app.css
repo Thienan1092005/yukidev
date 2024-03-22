@@ -277,10 +277,7 @@ html body {
   position: relative;
   top: 90px;
 }
-.playagames:hover {
-  background-color: rgb(255, 0, 128);
-  transition: linear, 0.5s;
-}
+
 .spotify-title {
   padding-bottom: 10px;
 }

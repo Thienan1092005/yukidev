@@ -23,9 +23,9 @@ function updateTheme() {
     night.disabled = false;
   }
 }
-// Cập nhật màu sắc lúc ban đầu
+
 updateTheme();
-// Cập nhật màu sắc mỗi 5 phút
+
 setInterval(updateTheme(), 300000);
 //thingkibng  config
 const thingKing = document.querySelector(".youThingKing");
