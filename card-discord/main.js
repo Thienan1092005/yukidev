@@ -198,3 +198,26 @@ window.onload = warning();
 //cập nhật thông tin và giảm độ trễ của toàn bộ hệ thống //
 setInterval(fetchData, 3000);
 window.onload = fetchData();
+
+// Khởi tạo biến đếm số lần click chuột phải
+let rightClickCount = 0;
+
+// Lắng nghe sự kiện click chuột phải
+document.addEventListener("contextmenu", function (event) {
+  // Ngăn chặn hành vi mặc định của trình duyệt khi click chuột phải
+  event.preventDefault();
+
+  // Tăng biến đếm số lần click chuột phải
+  rightClickCount++;
+
+  // Kiểm tra nếu đã click chuột phải đủ 3 lần
+  if (rightClickCount === 3) {
+    // Chuyển hướng người dùng đến URL mong muốn
+    window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+  }
+});
+
+// Reset biến đếm khi trang được tải lại
+window.addEventListener("load", function () {
+  rightClickCount = 0;
+});
