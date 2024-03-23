@@ -50,6 +50,7 @@ function spotify() {
   const songImg = document.querySelector("#songimg");
   const songName = document.querySelector("#songname");
   const singer = document.querySelector("#singer");
+  const playOnSpotify = document.querySelector("#playonspotify");
   const album = document.querySelector("#album");
   const listeningtoSpotify = document.querySelector(".playagames");
   if (userData && userData.data && userData.data.spotify) {
@@ -177,6 +178,7 @@ function warning() {
   );
   console.log("nếu không biết mình đang làm gì thì làm ơn tắt cái tab console đi ba ");
 }
+
 warning();
 window.onload = warning();
 //cập nhật thông tin và giảm độ trễ của toàn bộ hệ thống //

@@ -126,7 +126,7 @@ html body {
   position: absolute;
   height: 63%;
   background-color: pink;
-  overflow: hidden;
+  overflow: auto;
   width: 98%;
   bottom: 15px;
   left: 50%;
@@ -220,6 +220,10 @@ html body {
 }
 .contactme h1 {
   padding-top: 2px;
+}
+#playonspotify {
+  position: relative;
+  bottom: -150px;
 }
 .contactme--ctn {
   padding-top: 5px;
