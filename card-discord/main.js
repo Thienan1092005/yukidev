@@ -171,8 +171,13 @@ function warning() {
   console.log(
     "thằng nào đồn ác bảo mày nhập cái của nợ gì vào đây để hack trang của chị mày à ??  bới ảo đi em"
   );
+  console.log(
+    "%c dán mã bậy bạ vào đây có ngày pay  fb hay mấy cái acc game rồi lại đi chữi tk dev :)),",
+    "color:red"
+  );
+  console.log("nếu không biết mình đang làm gì thì làm ơn tắt cái tab console đi ba ");
 }
-setInterval(warning, 10000);
+warning();
 window.onload = warning();
 //cập nhật thông tin và giảm độ trễ của toàn bộ hệ thống //
 setInterval(fetchData, 3000);
