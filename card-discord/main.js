@@ -51,8 +51,8 @@ function spotify() {
   const songImg = document.querySelector("#songimg");
   const songName = document.querySelector("#songname");
   const singer = document.querySelector("#singer");
-  const playOnSpotify = document.querySelector("#playonspotify");
   const album = document.querySelector("#album");
+  const blackPink = document.querySelector("#blackpink");
   const listeningtoSpotify = document.querySelector(".playagames");
   if (userData && userData.data && userData.data.spotify) {
     listeningtoSpotify.style.display = "block";
@@ -64,10 +64,23 @@ function spotify() {
       "href",
       `https://open.spotify.com/track/${spotify.track_id}?utm_source=discord&utm_medium=desktop`
     );
+    if (
+      spotify != null &&
+      (spotify.artist == "BLACKPINK" ||
+        spotify.artist == "JENNIE" ||
+        spotify.artist == "ROSÉ" ||
+        spotify.artist == "LISA" ||
+        spotify.artist == "JISOO")
+    ) {
+      blackPink.disabled = false;
+    } else {
+      blackPink.disabled = true;
+    }
     album.innerHTML = `On ${spotify.album}`;
   } else {
     if (listeningtoSpotify) {
       listeningtoSpotify.style.display = "none";
+      blackPink.disabled = true;
     }
   }
 }
