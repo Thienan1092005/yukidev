@@ -192,17 +192,11 @@ function warning() {
   );
   console.log("nếu không biết mình đang làm gì thì làm ơn tắt cái tab console đi ba ");
 }
-
-warning();
-window.onload = warning();
-//cập nhật thông tin và giảm độ trễ của toàn bộ hệ thống //
-setInterval(fetchData, 3000);
-window.onload = fetchData();
-
-// Khởi tạo biến đếm số lần click chuột phải
-let rightClickCount = 0;
-
 // no dev
 document.addEventListener("contextmenu", (e) => {
   e.preventDefault();
 });
+warning();
+window.onload = warning();
+setInterval(fetchData, 3000);
+window.onload = fetchData();
