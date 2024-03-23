@@ -169,10 +169,10 @@ function getAvtUser() {
 function warning() {
   console.log(" %c DỪNG LẠI !!!!", "font-size: 50px; color: red;");
   console.log(
-    "thằng nào đồn ác bảo mày nhập cái của nợ gì vào đây để hack trang của chị này à ??  bới ảo đi em"
+    "thằng nào đồn ác bảo mày nhập cái của nợ gì vào đây để hack trang của chị mày à ??  bới ảo đi em"
   );
 }
-setInterval(warning(), 5000);
+setInterval(warning, 10000);
 window.onload = warning();
 //cập nhật thông tin và giảm độ trễ của toàn bộ hệ thống //
 setInterval(fetchData, 3000);
