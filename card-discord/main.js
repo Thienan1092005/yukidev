@@ -11,6 +11,7 @@ function isDayTime() {
   const currentHour = new Date().getHours();
   return currentHour >= 7 && currentHour < 19;
 }
+
 // Hàm để cập nhật màu sắc của themee
 function updateTheme() {
   const night = document.querySelector("#night");
