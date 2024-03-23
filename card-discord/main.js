@@ -4,7 +4,6 @@ const audio = document.querySelector(".audio");
 for (let i = 0; i < roleCode.length; i++) {
   const indexNum = i % 4;
   roleCode[i].classList.add(`active${indexNum}`);
-  console.log(`active${indexNum}`);
 }
 
 // Hàm để kiểm tra xem có phải là ban ngày hay không
@@ -166,6 +165,15 @@ function getAvtUser() {
     `https://cdn.discordapp.com/avatars/${userData.data.discord_user.id}/${userData.data.discord_user.avatar}?size=1024`
   );
 }
+//warning //
+function warning() {
+  console.log(" %c DỪNG LẠI !!!!", "font-size: 50px; color: red;");
+  console.log(
+    "thằng nào đồn ác bảo mày nhập cái của nợ gì vào đây để hack trang của chị này à ??  bới ảo đi em"
+  );
+}
+setInterval(warning(), 5000);
+window.onload = warning();
 //cập nhật thông tin và giảm độ trễ của toàn bộ hệ thống //
 setInterval(fetchData, 3000);
 window.onload = fetchData();
