@@ -154,7 +154,7 @@ function updateStatus() {
   ) {
     statusElement.setAttribute("src", statusList.desktop[userData.data.discord_status]);
   } else {
-    statusElement.setAttribute("src", "./svg/invisible.svg");
+    statusElement.setAttribute("src", "./svg/ofline.svg");
   }
 }
 //hàm lấy avt của user//
