@@ -349,9 +349,6 @@ html body {
     height: auto;
     overflow: auto;
   }
-  .contactme {
-  }
-
   * {
     font-size: 11px;
   }
@@ -410,10 +407,12 @@ html body {
   .aboutme {
     top: 32%;
     height: auto;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
   .contactme {
     position: relative;
+    top: 0;
   }
   .contact--item {
     height: 25px;
@@ -452,6 +451,17 @@ html body {
   }
   .contact--item ion-icon {
     font-size: 20px;
+  }
+  .logo {
+    display: inline-block;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    left: 110px;
+    top: 10px;
+  }
+  .spotify-title {
+    display: inline-block;
   }
 }
 @media (max-width: 280px) {
