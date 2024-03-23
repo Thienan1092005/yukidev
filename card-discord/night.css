@@ -22,3 +22,6 @@ html body {
   border-right: 10px solid rgb(0, 0, 0);
   border-left: 10px solid rgb(0, 0, 0);
 }
+.inner--contents__video {
+  background-image: url(https://i.pinimg.com/originals/88/15/63/881563d6444b370fa4ceea0c3183bb4c.gif);
+}
