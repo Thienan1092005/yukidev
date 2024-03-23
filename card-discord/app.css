@@ -36,7 +36,7 @@ html body {
   left: 50%;
   transform: translateX(-50%);
   width: 610px;
-  height: 1150px;
+  height: 1100px;
   background-image: var(--pastel-gradient-outline);
   /* boder control  */
   border-radius: 10px;
@@ -76,7 +76,7 @@ html body {
   top: 25%;
   transform: translate(5%, -50%);
   background-color: white;
-  position: a;
+  position: absolute;
   border: 5px solid white;
 }
 #userAvt {
@@ -100,7 +100,7 @@ html body {
 .status img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .badges {
   width: auto;
@@ -124,7 +124,7 @@ html body {
 }
 .aboutme {
   position: absolute;
-  height: 62%;
+  height: 63%;
   background-color: pink;
   overflow: hidden;
   width: 98%;
@@ -213,7 +213,9 @@ html body {
 .contactme {
   position: relative;
   width: 100%;
-  top: 100px;
+  top: 110px;
+
+  height: auto;
   color: var(--theme-text);
 }
 .contactme h1 {
@@ -343,11 +345,8 @@ html body {
     overflow: auto;
   }
   .contactme {
-    bottom: 20px;
   }
-  .contact--item {
-    height: 30px;
-  }
+
   * {
     font-size: 11px;
   }
@@ -409,7 +408,6 @@ html body {
     overflow: auto;
   }
   .contactme {
-    bottom: 20px;
     position: relative;
   }
   .contact--item {
@@ -477,8 +475,6 @@ html body {
   }
   .contactme {
     position: relative;
-    bottom: -50px;
-    padding-bottom: 15px;
   }
   .contact--item {
     height: 35px;

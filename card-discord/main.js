@@ -16,10 +16,8 @@ function isDayTime() {
 function updateTheme() {
   const night = document.querySelector("#night");
   if (isDayTime()) {
-    console.log("bay gio la ban ngay ");
     night.disabled = true;
   } else {
-    console.log("bay gio la ban dem ");
     night.disabled = false;
   }
 }
