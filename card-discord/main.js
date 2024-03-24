@@ -23,6 +23,26 @@ function updateTheme() {
 }
 updateTheme();
 setInterval(updateTheme(), 300000);
+//get codeing //
+function getCodeding() {
+  if (userData.data.activities) {
+    const appLication = userData.data.activities[2].assets;
+    let imgId = appLication.large_image;
+    z;
+    let smallId = appLication.small_image;
+    let Text = appLication.large_text;
+    let SmallText = appLication.small_text;
+    const pjName = document.querySelector("#pj--name");
+    const pjFIle = document.querySelector("#pj--file");
+    const pjLang = document.querySelector("#pj--lang");
+    const pjImg = document.querySelector("#pj--img");
+    pjImg.setAttribute(
+      "src",
+      `https://cdn.discordapp.com/app-assets/383226320970055681/${imgId}.png`
+    );
+    pjFIle.innerHTML = Text;
+  }
+}
 //thingkibng  config
 const thingKing = document.querySelector(".youThingKing");
 thingKing.innerHTML = "Xin chào mình là Yuki SE tại VNG ";
@@ -41,6 +61,8 @@ async function fetchData() {
     getCaption();
     spotify();
     getAName();
+    updateTheme();
+    getCodeding();
   } catch (error) {
     console.error("Đã xảy ra lỗi khi lấy dữ liệu:", error);
   }
@@ -60,10 +82,11 @@ function spotify() {
     songName.innerHTML = `${spotify.song}`;
     songImg.setAttribute("src", `${spotify.album_art_url}`);
     singer.innerHTML = `by ${spotify.artist}`;
-    songLink.setAttribute(
-      "href",
-      `https://open.spotify.com/track/${spotify.track_id}?utm_source=discord&utm_medium=desktop`
-    );
+    songLink.setAttribute("href", `https://www.youtube.com/watch?v=dQw4w9WgXcQ`);
+    // songLink.setAttribute(
+    //   "href",
+    //   `https://open.spotify.com/track/${spotify.track_id}?utm_source=discord&utm_medium=desktop`
+    // );
     if (
       spotify != null &&
       (spotify.artist == "BLACKPINK" ||

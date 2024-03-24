@@ -328,7 +328,33 @@ html body {
   top: 0;
   object-fit: cover;
 }
+.playacode {
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.code--img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+.code--ctn {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding-left: 30px;
+}
 
+.code--ctn span {
+  font-weight: 100;
+}
+.code--title {
+  font-weight: 600;
+}
 @media (max-width: 767px) {
   .playagames {
     position: relative;
