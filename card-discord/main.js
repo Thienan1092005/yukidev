@@ -5,7 +5,13 @@ for (let i = 0; i < roleCode.length; i++) {
   const indexNum = i % 4;
   roleCode[i].classList.add(`active${indexNum}`);
 }
-
+const aboutYuki = {
+  name: "Đặng Hoàng Thiên Ân",
+  old: "19",
+  job: "fullstack-developer ",
+  campany: "VNG corpation",
+  wish: "i wish i have a birthday 18th, have a more friend ",
+};
 // Hàm để kiểm tra xem có phải là ban ngày hay không
 function isDayTime() {
   const currentHour = new Date().getHours();
@@ -28,19 +34,18 @@ function getCodeding() {
   if (userData.data.activities) {
     const appLication = userData.data.activities[2].assets;
     let imgId = appLication.large_image;
-    z;
-    let smallId = appLication.small_image;
     let Text = appLication.large_text;
-    let SmallText = appLication.small_text;
+    let pjw = userData.data.activities[2].state;
     const pjName = document.querySelector("#pj--name");
     const pjFIle = document.querySelector("#pj--file");
-    const pjLang = document.querySelector("#pj--lang");
     const pjImg = document.querySelector("#pj--img");
+    const pjTimeElement = document.querySelector("#pj--time");
     pjImg.setAttribute(
       "src",
       `https://cdn.discordapp.com/app-assets/383226320970055681/${imgId}.png`
     );
-    pjFIle.innerHTML = Text;
+    pjFIle.innerHTML = userData.data.activities[2].details;
+    pjName.innerHTML = pjw;
   }
 }
 //thingkibng  config

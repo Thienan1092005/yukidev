@@ -350,7 +350,8 @@ html body {
 }
 
 .code--ctn span {
-  font-weight: 100;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 700;
 }
 .code--title {
   font-weight: 600;
@@ -422,6 +423,10 @@ html body {
     z-index: 5;
     transform: translate(-50%, -50%);
   }
+  .playacode {
+    position: relative;
+    top: -10px;
+  }
   .playagames {
     top: -25px;
     position: relative;
@@ -491,6 +496,10 @@ html body {
   }
 }
 @media (max-width: 280px) {
+  .playacode {
+    position: relative;
+    top: 70px;
+  }
   #avatar-decoration {
     width: 120px;
     height: 120px;
@@ -516,6 +525,7 @@ html body {
   }
   .contactme {
     position: relative;
+    top: 100px;
   }
   .contact--item {
     height: 35px;
@@ -554,5 +564,17 @@ html body {
   }
   .contact--item ion-icon {
     font-size: 25px;
+  }
+  .logo {
+    position: relative;
+    left: -20px;
+  }
+  .ilovevng {
+    width: 100px;
+    height: 100px;
+    transform: translateY(50%);
+  }
+  .code--ctn {
+    padding-left: 20px;
   }
 }
