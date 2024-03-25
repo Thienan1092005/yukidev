@@ -29,25 +29,30 @@ function updateTheme() {
 }
 updateTheme();
 setInterval(updateTheme(), 300000);
-//get codeing //
-function getCodeding() {
-  if (userData.data.activities) {
-    const appLication = userData.data.activities[2].assets;
-    let imgId = appLication.large_image;
-    let Text = appLication.large_text;
-    let pjw = userData.data.activities[2].state;
-    const pjName = document.querySelector("#pj--name");
-    const pjFIle = document.querySelector("#pj--file");
-    const pjImg = document.querySelector("#pj--img");
-    const pjTimeElement = document.querySelector("#pj--time");
-    pjImg.setAttribute(
-      "src",
-      `https://cdn.discordapp.com/app-assets/383226320970055681/${imgId}.png`
-    );
-    pjFIle.innerHTML = userData.data.activities[2].details;
-    pjName.innerHTML = pjw;
-  }
-}
+// //get codeing //
+// function getCodeding() {
+//   const playACode = document.querySelector(".playacode");
+//   if (userData.data.activities && userData.data.activities[2].assets) {
+//     console.log("coding");
+//     playACode.style.display = "flex";
+//     const appLication = userData.data.activities[2].assets;
+//     let imgId = appLication.large_image;
+//     let Text = appLication.large_text;
+//     let pjw = userData.data.activities[2].state;
+//     const pjName = document.querySelector("#pj--name");
+//     const pjFIle = document.querySelector("#pj--file");
+//     const pjImg = document.querySelector("#pj--img");
+//     const pjTimeElement = document.querySelector("#pj--time");
+//     pjImg.setAttribute(
+//       "src",
+//       `https://cdn.discordapp.com/app-assets/383226320970055681/${imgId}.png`
+//     );
+//     pjFIle.innerHTML = userData.data.activities[2].details;
+//     pjName.innerHTML = pjw;
+//   } else {
+//     playACode.style.display = "none";
+//   }
+// }
 //thingkibng  config
 const thingKing = document.querySelector(".youThingKing");
 thingKing.innerHTML = "Xin chào mình là Yuki SE tại VNG ";
