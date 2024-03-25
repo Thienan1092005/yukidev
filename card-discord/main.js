@@ -72,7 +72,7 @@ async function fetchData() {
     spotify();
     getAName();
     updateTheme();
-    getCodeding();
+    // getCodeding();
   } catch (error) {
     console.error("Đã xảy ra lỗi khi lấy dữ liệu:", error);
   }
@@ -233,3 +233,7 @@ warning();
 window.onload = warning();
 setInterval(fetchData, 3000);
 window.onload = fetchData();
+const gif = document.querySelector(".ilovevng").addEventListener("click", () => {
+  song.play();
+});
+const song = document.querySelector(".song");
