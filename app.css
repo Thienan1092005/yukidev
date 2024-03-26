@@ -207,7 +207,7 @@ html body {
   align-items: center;
   padding: 4px;
   height: 22px;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 500;
 }
 .cir {
@@ -315,7 +315,7 @@ html body {
   height: 125px;
   position: absolute;
   right: 0;
-  top: 150px;
+  top: 130px;
 }
 .decripton {
   position: relative;
@@ -386,7 +386,7 @@ html body {
     overflow: auto;
   }
   * {
-    font-size: 11px;
+    font-size: 16px;
   }
   .inner .avatar {
     width: 100px;
@@ -458,7 +458,7 @@ html body {
     height: 25px;
   }
   * {
-    font-size: 11px;
+    font-size: 16px;
   }
   .inner .avatar {
     width: 80px;
@@ -540,7 +540,7 @@ html body {
     height: 35px;
   }
   * {
-    font-size: 15px;
+    font-size: 14px;
   }
   .inner .avatar {
     width: 120px;
