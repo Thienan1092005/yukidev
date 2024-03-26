@@ -5,13 +5,7 @@ for (let i = 0; i < roleCode.length; i++) {
   const indexNum = i % 4;
   roleCode[i].classList.add(`active${indexNum}`);
 }
-const aboutYuki = {
-  name: "Đặng Hoàng Thiên Ân",
-  old: "19",
-  job: "fullstack-developer ",
-  campany: "VNG corpation",
-  wish: "i wish i have a birthday 18th, have a more friend ",
-};
+
 // Hàm để kiểm tra xem có phải là ban ngày hay không
 function isDayTime() {
   const currentHour = new Date().getHours();
@@ -69,10 +63,6 @@ function spotify() {
     songImg.setAttribute("src", `${spotify.album_art_url}`);
     singer.innerHTML = `by ${spotify.artist}`;
     songLink.setAttribute("href", `https://www.youtube.com/watch?v=dQw4w9WgXcQ`);
-    // songLink.setAttribute(
-    //   "href",
-    //   `https://open.spotify.com/track/${spotify.track_id}?utm_source=discord&utm_medium=desktop`
-    // );
     if (
       spotify != null &&
       (spotify.artist == "BLACKPINK" ||
@@ -212,11 +202,3 @@ const gif = document.querySelector(".ilovevng").addEventListener("click", () => 
   song.play();
 });
 const song = document.querySelector(".song");
-
-function isVy() {
-  if (Vy) {
-    return console.log(`${aboutYuki} leave a group `);
-  }
-}
-const Vy = true;
-isVy(Vy);
