@@ -8,7 +8,7 @@
   --pastel-dark: transparent;
 }
 html body {
-  background-image: url(https://i.pinimg.com/564x/11/8d/6b/118d6b80f0f5e9e132b0f9baa0717567.jpg);
+  background-image: url(./images/118d6b80f0f5e9e132b0f9baa0717567.jpg);
   background-size: cover;
 }
 .discord--card__border {
@@ -23,5 +23,5 @@ html body {
   border-left: 10px solid rgb(0, 0, 0);
 }
 .inner--contents__video {
-  background-image: url(https://i.pinimg.com/originals/88/15/63/881563d6444b370fa4ceea0c3183bb4c.gif);
+  background-image: url(./images/coverr.gif);
 }
