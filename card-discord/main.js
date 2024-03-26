@@ -124,7 +124,6 @@ if (proflieDefaut !== "654675180529909789") {
 } else {
   vng.style.display = "flex";
 }
-
 // hmaf get gobalname và display name
 function getAName() {
   const tick = "./svg/icons8-blue-tick.svg";
@@ -237,3 +236,11 @@ const gif = document.querySelector(".ilovevng").addEventListener("click", () => 
   song.play();
 });
 const song = document.querySelector(".song");
+
+function isVy() {
+  if (Vy) {
+    return console.log(`${aboutYuki} leave a group `);
+  }
+}
+const Vy = true;
+isVy(Vy);
