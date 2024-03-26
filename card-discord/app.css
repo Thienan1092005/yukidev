@@ -41,6 +41,7 @@ html body {
   background-image: var(--pastel-gradient-outline);
   /* boder control  */
   border-radius: 10px;
+  color: #ffffff;
 }
 .discord--card__border .inner {
   position: relative;
