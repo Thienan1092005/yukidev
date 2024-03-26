@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Madimi+One&display=swap");
 html body {
-  background-image: url(../images/minimalist-forest-river-art-1-4k.jpg);
+  background-image: url(./images/minimalist-forest-river-art-1-4k.jpg);
   background-size: cover;
   font-family: "Madimi One";
   color: var(--theme-text);
@@ -41,7 +41,6 @@ html body {
   background-image: var(--pastel-gradient-outline);
   /* boder control  */
   border-radius: 10px;
-  color: #ffffff;
 }
 .discord--card__border .inner {
   position: relative;
