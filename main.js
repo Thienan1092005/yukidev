@@ -62,7 +62,7 @@ const spotify = () => {
     songName.innerHTML = `${spotifyData.song}`;
     songImg.setAttribute("src", `${spotifyData.album_art_url}`);
     singer.innerHTML = `by ${spotifyData.artist}`;
-    songLink.setAttribute("href", `https://www.youtube.com/watch?v=dQw4w9WgXcQ`);
+    songLink.setAttribute("href", `https://www.youtube. com/watch?v=dQw4w9WgXcQ`);
 
     if (spotifyData != null && allowedArtists.includes(spotifyData.artist)) {
       blackPink.disabled = false;
