@@ -1,18 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
   const listItems = document.querySelectorAll(".item");
   const rightCtns = document.querySelectorAll(".right--ctn");
-
   // Mặc định mở mục "2020"
   listItems[0].style.color = "#0cf";
   rightCtns[0].classList.add("active");
-
   listItems.forEach((item, index) => {
     item.addEventListener("click", () => {
       // Bỏ lớp active khỏi tất cả các rightCtns
       rightCtns.forEach((rightCtn) => {
         rightCtn.classList.remove("active");
       });
-
       // Thêm lớp active vào rightCtn tương ứng với mục được chọn
       rightCtns[index].classList.add("active");
 
