@@ -12,12 +12,10 @@ document.addEventListener("DOMContentLoaded", function () {
       });
       // Thêm lớp active vào rightCtn tương ứng với mục được chọn
       rightCtns[index].classList.add("active");
-
       // Set màu cho tất cả các mục về màu trắng
       listItems.forEach((item) => {
         item.style.color = "white";
       });
-
       // Set màu cho mục được chọn
       item.style.color = "#0cf";
     });
