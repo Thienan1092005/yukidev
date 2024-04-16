@@ -293,6 +293,7 @@ html body {
   height: auto;
   position: relative;
   top: 90px;
+  display: none;
 }
 
 .spotify-title {
