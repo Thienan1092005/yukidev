@@ -42,7 +42,9 @@ setInterval(updateTheme, 300000);
 thingKing.innerHTML = "chào bạn mình là Yuki frontend Developer ";
 const fetchData = async () => {
   try {
-    response = await fetch(`https://api.lanyard.rest/v1/users/${proflieDefaut}`);
+    response = await fetch(
+      `https://api.lanyard.rest/v1/users/${proflieDefaut}`
+    );
     const data = await response.json();
     userData = data;
     updateStatus();
@@ -96,7 +98,12 @@ const getAName = () => {
 const getCaption = () => {
   const captionElement = document.querySelector("#caption");
   if (userData && userData.data && userData.data.spotify == null) {
-    if (userData && userData.data && userData.data.activities && userData.data.activities.length > 0) {
+    if (
+      userData &&
+      userData.data &&
+      userData.data.activities &&
+      userData.data.activities.length > 0
+    ) {
       const activity = userData.data.activities[0];
       let customIcon = "";
       if (activity.emoji && activity.emoji.name) {
@@ -107,7 +114,12 @@ const getCaption = () => {
       captionElement.innerHTML = "";
     }
   } else {
-    if (userData && userData.data && userData.data.activities && userData.data.activities.length > 0) {
+    if (
+      userData &&
+      userData.data &&
+      userData.data.activities &&
+      userData.data.activities.length > 0
+    ) {
       const activity = userData.data.activities[0];
       let customIcon = "";
       if (activity.emoji && activity.emoji.name) {
@@ -138,12 +150,19 @@ const updateStatus = () => {
   };
   const isMobileActive = userData.data.active_on_discord_mobile == true;
   const isDesktopActive =
-    userData.data.active_on_discord_desktop == true || userData.data.active_on_discord_mobile == true;
+    userData.data.active_on_discord_desktop == true ||
+    userData.data.active_on_discord_mobile == true;
 
   if (isMobileActive) {
-    statusElement.setAttribute("src", statusList.mobile[userData.data.discord_status]);
+    statusElement.setAttribute(
+      "src",
+      statusList.mobile[userData.data.discord_status]
+    );
   } else if (isDesktopActive) {
-    statusElement.setAttribute("src", statusList.desktop[userData.data.discord_status]);
+    statusElement.setAttribute(
+      "src",
+      statusList.desktop[userData.data.discord_status]
+    );
   } else {
     statusElement.setAttribute("src", "./svg/offline.svg");
   }
@@ -156,9 +175,16 @@ const getAvtUser = () => {
 };
 const warning = () => {
   console.log(" %c DỪNG LẠI !!!!", "font-size: 50px; color: red;");
-  console.log("thằng nào đồn ác bảo mày nhập cái của nợ gì vào đây để hack trang của chị mày à ??  bới ảo đi em");
-  console.log("%c dán mã bậy bạ vào đây có ngày pay  fb hay mấy cái acc game rồi lại đi chữi tk dev :)),", "color:red");
-  console.log("nếu không biết mình đang làm gì thì làm ơn tắt cái tab console đi ba ");
+  console.log(
+    "thằng nào đồn ác bảo mày nhập cái của nợ gì vào đây để hack trang của chị mày à ??  bới ảo đi em"
+  );
+  console.log(
+    "%c dán mã bậy bạ vào đây có ngày pay  fb hay mấy cái acc game rồi lại đi chữi tk dev :)),",
+    "color:red"
+  );
+  console.log(
+    "nếu không biết mình đang làm gì thì làm ơn tắt cái tab console đi ba "
+  );
 };
 document.addEventListener("contextmenu", (e) => {
   e.preventDefault();
@@ -166,7 +192,9 @@ document.addEventListener("contextmenu", (e) => {
 warning();
 setInterval(fetchData, 3000);
 window.onload = fetchData;
-const gif = document.querySelector(".ilovevng").addEventListener("click", () => {
-  song.play();
-});
+const gif = document
+  .querySelector(".ilovevng")
+  .addEventListener("click", () => {
+    song.play();
+  });
 const song = document.querySelector(".song");
